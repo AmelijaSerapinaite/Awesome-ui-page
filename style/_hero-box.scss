@@ -1,0 +1,60 @@
+.hero-box {
+    padding-bottom: 230px;
+    .left-ellipse {
+        position: relative;
+        top: 480px;
+    }
+
+    .hero-box-content {
+        display: flex;
+        position: relative;
+
+        .left-side {
+            width: 50%;
+            padding-left: 30px;
+
+            @include lg {
+                width: 70%;
+              }
+
+            .img-position {
+                position: absolute;
+                left: 200px;
+                top: 6px;
+            }
+
+            h1 {
+                font-weight: 600;
+                line-height: 56px;
+                text-transform: uppercase;
+                color: $secondary-color;
+                font-size: 40px;
+
+                span {
+                    font-size: 56px;
+                    font-weight: 500;
+                }
+            }
+
+            p {
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 26px;
+                letter-spacing: 0.04em;
+                max-width: 500px;
+                margin: 20px 0 30px 0;
+            }
+        }
+    }
+
+    .right-side {
+        width: 50%;
+        margin: -80px;
+        padding: 0 0 0 300px;
+
+        @include lg {
+            width: 30%;
+            padding: 0 0 0 10px;
+          }
+    }
+}

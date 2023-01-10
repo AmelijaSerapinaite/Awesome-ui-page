@@ -1,0 +1,88 @@
+.slider {
+    padding-bottom: 150px;
+}
+
+.main-content .slider {
+    overflow: hidden;
+}
+
+.top {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.sliders {
+    button {
+        width: 75px;
+        height: 75px;
+        cursor: pointer;
+        padding: 0px;
+        border: none;
+        background-color: transparent;
+        background-image: url('img/arrow.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &.active,
+        &:hover {
+            background-image: url('img/active-arrow.svg');
+        }
+
+        &.previous {
+            transform: rotate(180deg);
+        }
+    }
+
+    button+button {
+        margin-left: 15px;
+    }
+}
+
+.team {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 40px;
+
+    .team-item {
+        width: calc(100% / 3);
+        min-width: 300px;
+        padding: 30px 20px 0 40px;
+        cursor: pointer;
+        background: linear-gradient(358.27deg, rgba(100, 123, 100, 0.77) -118.86%, rgba(100, 123, 100, 0) 25.62%, rgba(100, 123, 100, 0) 98.53%), #FFFFFF;
+        display: flex;
+        flex-wrap: wrap;
+
+        .image {
+            width: 50%;
+
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .qoute {
+            width: 100%;
+            font-size: 16px;
+            font-style: italic;
+        }
+    }
+
+    .about {
+        width: 50%;
+
+        span {
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        h4 {
+            font-size: 12px;
+            font-weight: 500;
+            margin-top: 5px;
+        }
+    }
+}

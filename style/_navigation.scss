@@ -1,0 +1,63 @@
+.image-wrapper {
+    cursor: pointer;
+}
+.main-navigation {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    padding: 0 30px;
+
+    @include xl {
+        justify-content: space-between;
+      }
+
+    ul {
+        padding-left: 0;
+        text-align: right;
+        display: inline-block;
+        font-size: 13px;
+
+        ::first-letter {
+            font-size: 1.3em;
+        }
+
+        li {
+            display: inline-block;
+
+            :hover {
+                opacity: 0.9;
+            }
+
+            a {
+                padding-left: 24px;
+                padding-right: 24px;
+                text-decoration: none;
+                font-weight: 600;
+                color: $secondary-color;
+                text-transform: uppercase;
+
+                &:hover {
+                    text-decoration: underline $green-color 5px;
+                }
+
+                span {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .button {
+        text-decoration: none;
+        text-transform: uppercase;
+        background: $button-collor;
+        color: $white-color;
+        font-size: 13px;
+        font-weight: 500;
+        line-height: 20px;
+        padding: 10px 15px;
+        display: inline-block;
+        border-radius: 3px;
+        text-align: center;
+    }
+}
